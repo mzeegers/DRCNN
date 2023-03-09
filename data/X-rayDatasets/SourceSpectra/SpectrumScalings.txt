@@ -1,0 +1,5 @@
+Source_Thungsten_35kVp_NoFilter.csv 1528000
+Radiology_Source_Thungsten_35kV_NoFilter.csv    7018000
+Radiology_Source_Thungsten_70kV_NoFilter.csv    13976000
+Radiology_Source_Thungsten_100kV_NoFilter.csv   17805999
+Radiology_Source_Thungsten_140kV_NoFilter.csv   20373000

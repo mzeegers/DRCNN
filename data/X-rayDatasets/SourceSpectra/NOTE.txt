@@ -1,0 +1,4 @@
+NOTE:
+These generated source spectra (and their scalings) were retrieved using a tool from the Siemens Healthineers website.
+Unfortunately, this website that provided this tool appears to be unreachable nowadays (https://www.oem-xray-components.siemens.com/X-ray-spectra-simulation).
+An alternative is to use the SpekPy software (https://bitbucket.org/spekpy/spekpy_release/wiki/Home) but this is not implemented in this Software package.
