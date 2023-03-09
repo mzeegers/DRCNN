@@ -1,0 +1,2 @@
+Unpack the usgs_splib07.zip file in this folder, after downloading it from:
+https://crustal.usgs.gov/speclab/QueryAll07a.php
