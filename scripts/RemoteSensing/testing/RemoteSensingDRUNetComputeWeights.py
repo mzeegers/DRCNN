@@ -3,8 +3,8 @@
 # This script carries out the testing of UNet networks on the remote sensing based testing data
 # The results are the csv files in the results/RemoteSensing/quantitative/ folder and the reduced image in the results/RemoteSensing/plots/ folder
 
-# The code assumes that the UNet networks are trained and available in the scripts/RemoteSensing/training/UNet/ManyMaterialsTrue folder
-# It also assumes the (testing) datasets to be available in the /data/RemoteSensingDatasets/ManyMaterialsTrue/ folder
+# The code assumes that the UNet networks are trained and available in the scripts/RemoteSensing/training/UNet/PartiallyOverlappingTrue folder
+# It also assumes the (testing) datasets to be available in the /data/RemoteSensingDatasets/PartiallyOverlappingTrue/ folder
 
 #Author,
 #   Mathé Zeegers, 

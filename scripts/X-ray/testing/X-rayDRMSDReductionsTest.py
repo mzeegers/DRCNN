@@ -3,8 +3,8 @@
 # This script carries out the testing of MSD networks on the X-ray based testing data
 # The results are the csv files in the results/RemoteSensing/quantitative/ folder
 
-# The code assumes that the MSD networks are trained and available in the scripts/X-ray/training/MSD/ManyMaterialsTrue folder
-# It also assumes the (testing) datasets to be available in the /data/X-rayDatasets/ManyMaterialsTrue/ folder
+# The code assumes that the MSD networks are trained and available in the scripts/X-ray/training/MSD/ManyMaterials(True/False)/ folders
+# It also assumes the (testing) datasets to be available in the /data/X-rayDatasets/ManyMaterials(True/False)/ folders
 
 #Author,
 #   Mathé Zeegers, 

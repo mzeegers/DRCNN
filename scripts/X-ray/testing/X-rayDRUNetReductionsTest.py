@@ -3,8 +3,8 @@
 # This script carries out the testing of UNet networks on the X-ray based testing data
 # The results are the csv files in the results/X-ray/quantitative/ folder
 
-# The code assumes that the UNet networks are trained and available in the scripts/X-ray/training/UNet/ManyMaterialsTrue folder
-# It also assumes the (testing) datasets to be available in the /data/X-rayDatasets/ManyMaterialsTrue/ folder
+# The code assumes that the UNet networks are trained and available in the scripts/X-ray/training/UNet/ManyMaterials(True/False)/ folders
+# It also assumes the (testing) datasets to be available in the /data/X-rayDatasets/ManyMaterials(True/False)/ folders
 
 #Author,
 #   Mathé Zeegers, 

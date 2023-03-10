@@ -3,8 +3,8 @@
 # This script carries out the testing of MSD networks on the remote sensing based testing data
 # The results are the csv files in the results/RemoteSensing/quantitative/ folder
 
-# The code assumes that the MSD networks are trained and available in the scripts/RemoteSensing/training/MSD/ManyMaterialsTrue folder
-# It also assumes the (testing) datasets to be available in the /data/RemoteSensingDatasets/ManyMaterialsTrue/ folder
+# The code assumes that the MSD networks are trained and available in the scripts/RemoteSensing/training/MSD/PartiallyOverlapping(True/False)/ folders
+# It also assumes the (testing) datasets to be available in the /data/RemoteSensingDatasets/PartiallyOverlapping(True/False)/ folders
 
 #Author,
 #   Mathé Zeegers, 
