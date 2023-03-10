@@ -54,7 +54,7 @@ else:
     n = msdnet.network.SegmentationMSDNet.from_file(FullNetworkPath)
 
 #Load the dataname
-flsin = sorted(os.listdir(FullDataPath))[90:91] #[0:1] for quick testing
+flsin = sorted(os.listdir(FullDataPath))[90:91] #[1:2] for quick testing
 flsin = [FullDataPath + s for s in flsin]
 
 #Load files and compute network result    
