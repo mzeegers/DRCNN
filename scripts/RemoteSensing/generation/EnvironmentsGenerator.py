@@ -1,7 +1,7 @@
 #Generation of remote sensing configurations without overlapping elements
 
 #This script carries out the generation of remote sensing configurations which consist of cylinders of various shapes that do not overlap each other
-#The results are a stack of images with one cylinder, which can be found in data/RemoteSensingDatasets/RemoteSensingConfigurations/
+#The results are a stack of images with one cylinder each, which can be found in data/RemoteSensingDatasets/RemoteSensingConfigurations/
 
 #Authors,
 #   Mathé Zeegers, 

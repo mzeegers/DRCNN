@@ -2,7 +2,7 @@
 
 #This script carries out the generation of remote sensing configurations which consist of cylinders of various shapes that can overlap each other
 # (there are two groups of cylinders have the possibility to overlap cylinders from the other group, but not those of their own group. The ratio between the groups is 1:5)
-#The results are a stack of images with one cylinder, which can be found in data/RemoteSensingDatasets/RemoteSensingConfigurations/
+#The results are a stack of images with one cylinder each, which can be found in data/RemoteSensingDatasets/RemoteSensingConfigurations/
 
 #Authors,
 #   Mathé Zeegers, 
@@ -24,7 +24,7 @@ os.makedirs('../../../data/RemoteSensingDatasets/RemoteSensingConfigurationsPart
 def insertObject(Obj, centery, centerx, radius, value, Field, SIZE, checkFrame = False, AllowList = [0]):
     Obj[Obj > 0] = value
 
-    #determine copy ranges
+    #Determine copy ranges
     minyField = max(0, centery-radius)
     maxyField = min(SIZE, centery+radius+1)
     minxField = max(0, centerx-radius)
