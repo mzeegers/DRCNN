@@ -13,7 +13,7 @@
 import csv
 import msdnet
 from pathlib import Path
-import network
+import DRMSD
 import glob
 import tifffile
 import matplotlib.pyplot as plt
