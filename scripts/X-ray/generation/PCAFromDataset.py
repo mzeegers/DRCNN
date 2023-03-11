@@ -1,8 +1,8 @@
-#PCA compression from hyperspectral X-ray projections
+#PCA compression for hyperspectral X-ray projections
 
-#This script applies PCA compression to the hyperspectral X-ray projections to the training sets
+#This script applies PCA compression to the (training set of the) hyperspectral X-ray projections
 #The code assumes that the MaterialProjectionsGenerator.py and SpectralDataGenerator.py have been carried out first to produce the hyperspectral X-ray datasets
-# and that those (four) datasets are available in the folders data/X-rayDatasets/ManyMaterials(True/False)/(Data/DataNoise)
+# and that those (four) datasets are available in the folders data/X-rayDatasets/ManyMaterials(True/False)/(Data/DataNoise)/
 
 #The compression is applied to the first 'TrainingSetSize' datafiles in the input folders (which form the training data)
 
