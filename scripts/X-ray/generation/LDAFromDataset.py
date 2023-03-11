@@ -1,6 +1,6 @@
 #LDA compression from hyperspectral X-ray projections
 
-#This scripts applies LDA compression to the hyperspectral X-ray projections to the training sets
+#This script applies LDA compression to the hyperspectral X-ray projections to the training sets
 #The code assumes that the MaterialProjectionsGenerator.py and SpectralDataGenerator.py have been carried out first to produce the hyperspectral X-ray datasets with ground truths
 # and that those (four) datasets are available in the folders data/X-rayDatasets/ManyMaterials(True/False)/(Data/DataNoise)
 # as well as ground truth for limited material case in the data/X-rayDatasets/ManyMaterialsFalse/GT 

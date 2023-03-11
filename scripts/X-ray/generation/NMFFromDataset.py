@@ -1,6 +1,6 @@
 #NMF compression from hyperspectral X-ray projections
 
-#This scripts applies NMF compression to the hyperspectral X-ray projections to the training sets
+#This script applies NMF compression to the hyperspectral X-ray projections to the training sets
 #The code assumes that the MaterialProjectionsGenerator.py and SpectralDataGenerator.py have been carried out first to produce the hyperspectral X-ray datasets
 # and that those (four) datasets are available in the folders data/X-rayDatasets/ManyMaterials(True/False)/(Data/DataNoise)
 
