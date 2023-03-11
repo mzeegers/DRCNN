@@ -22,15 +22,6 @@ import re
 import sys
 import tifffile
 
-layers = 100
-dilations = 10
-DataPath = '../../../../../data/X-rayDatasets/ManyMaterialsFalse/'
-DataReduction = False
-DataReductionList = []
-if DataReductionArg[0] == '[':
-    DataReduction = True
-    DataReductionList = [int(el) for el in re.findall(r'\b\d+\b', DataReductionArg)]
-
 #Get script arguments
 Dataset = sys.argv[1]
 GTSet = sys.argv[2]
@@ -39,6 +30,15 @@ if(len(sys.argv) > 3):
 else:
     DataReductionArg = '0'
 
+#Settings
+layers = 100
+dilations = 10
+DataPath = '../../../../../data/X-rayDatasets/ManyMaterialsFalse/'
+DataReduction = False
+DataReductionList = []
+if DataReductionArg[0] == '[':
+    DataReduction = True
+    DataReductionList = [int(el) for el in re.findall(r'\b\d+\b', DataReductionArg)]
 spectralDim = tifffile.imread(DataPath + Dataset + '/00000Data.tiff').shape[0]
 targetLabels = 2
 

@@ -22,15 +22,6 @@ import re
 import sys
 import tifffile
 
-layers = 100
-dilations = 10
-DataPath = '../../../../../data/X-rayDatasets/ManyMaterialsTrue/'
-DataReduction = False
-DataReductionList = []
-if DataReductionArg[0] == '[':
-    DataReduction = True
-    DataReductionList = [int(el) for el in re.findall(r'\b\d+\b', DataReductionArg)]
-
 #Get script arguments
 Dataset = sys.argv[1]
 GTSet = sys.argv[2]
@@ -42,11 +33,22 @@ if(len(sys.argv) > 4):
     seed = int(sys.argv[4])
 else:
     seed = 124
-np.random.seed(seed)
-random.seed(seed)
 
+#Settings
+layers = 100
+dilations = 10
+DataPath = '../../../../../data/X-rayDatasets/ManyMaterialsTrue/'
+DataReduction = False
+DataReductionList = []
+if DataReductionArg[0] == '[':
+    DataReduction = True
+    DataReductionList = [int(el) for el in re.findall(r'\b\d+\b', DataReductionArg)]
 spectralDim = tifffile.imread(DataPath + Dataset + '/00000Data.tiff').shape[0]
 targetLabels = 2
+
+#Set random seeds
+np.random.seed(seed)
+random.seed(seed)
 
 print(Dataset)
 print(GTSet)
