@@ -37,7 +37,7 @@ else:
 #Settings
 layers = 100
 dilations = 10
-DataPath = '../../../../../data/X-rayDatasets/ManyMaterialsTrue/'
+DataPath = '../../../../../../data/X-rayDatasets/ManyMaterialsTrue/'
 DataReduction = False
 DataReductionList = []
 if DataReductionArg[0] == '[':
