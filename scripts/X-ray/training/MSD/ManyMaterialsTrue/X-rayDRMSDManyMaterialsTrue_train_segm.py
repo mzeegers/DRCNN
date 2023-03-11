@@ -2,7 +2,7 @@
 
 # This script carries out the MSD and DRMSD network training on hyperspectral X-ray data (and on data compressed by PCA, NMF and LDA methods) with many different materials
 # The results are the networks and log files generated from the (DR)MSD code
-# The code assumes that the training data to be available, otherwise run the script in scripts/X-ray/genreation/ folder first
+# The code assumes that the training data to be available, otherwise run the script in scripts/X-ray/generation/ folder first
 # The number of training:validation:test files are hardcoded as 70:20:10 (but can relatively easily be changed)
 
 #Authors,
