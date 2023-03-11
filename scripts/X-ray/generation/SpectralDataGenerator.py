@@ -7,6 +7,8 @@
 
 #The code assumes that the MaterialProjectionsGenerator.py have been carried out first to produce the material projections
 
+#NOTE: Due to the hyperspectral nature of the data and the high number of materials, computation can take long. Therefore, try it first on a limited number of instances (see Ninstances variable)
+
 #Authors,
 #   Mathé Zeegers, 
 #       Centrum Wiskunde & Informatica, Amsterdam (m.t.zeegers@cwi.nl)
@@ -19,7 +21,7 @@ Scheme = [[2, [list(range(0, 17)) + list(range(18, 60)), [17]]],
           [10, [list(range(0, 6)), list(range(6, 12)), list(range(12,18)), list(range(19,25)), list(range(25,32)), list(range(32,39)), list(range(39,46)), list(range(46,53)), list(range(53,60)), [17]]],
           [60, [[x] for x in range(0,17)] + [[x] for x in range(18,60)] + [[17]]]]
 
-Ninstances = 1    #Number of instances to create
+Ninstances = 1    #Number of instances to create - set to 100 for the complete data generation
 
 def SpectralDataGenerator(ManyMaterials):
 
