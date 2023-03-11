@@ -1,0 +1,19 @@
+#!/bin/bash
+#Scripting file for running multiple training instances with (DR)MSD. If there are more CUDA cores on your machine the device IDs can be changed.
+#General usage: CUDA_VISIBLE_DEVICES=<CUDA DEVICE ID> timeout <days>d python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py <Dataset> <GroundTruth> <Datareduction> <seed> (leave Datareduction 0 for no reduction)
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py DataNoise GT [2] 0
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py DataNoise GT [2] 1
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py DataNoise GT [2] 2
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py DataNoise GT [2] 3
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py DataNoise GT [2] 4
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py DataNoise GT [2] 5
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py DataNoise GT [2] 6
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py DataNoise GT [2] 7
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py FULLTrainingSet_Sample6_LDAData_2compDataNoiseGT GT 0 0
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py FULLTrainingSet_Sample6_LDAData_2compDataNoiseGT GT 0 1
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py FULLTrainingSet_Sample6_LDAData_2compDataNoiseGT GT 0 2
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py FULLTrainingSet_Sample6_LDAData_2compDataNoiseGT GT 0 3
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py FULLTrainingSet_Sample6_LDAData_2compDataNoiseGT GT 0 4
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py FULLTrainingSet_Sample6_LDAData_2compDataNoiseGT GT 0 5
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py FULLTrainingSet_Sample6_LDAData_2compDataNoiseGT GT 0 6
+CUDA_VISIBLE_DEVICES=0 timeout 2m python X-rayDRMSDManyMaterialsTrue_train_segmRobustnessExp.py FULLTrainingSet_Sample6_LDAData_2compDataNoiseGT GT 0 7

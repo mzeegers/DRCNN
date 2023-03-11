@@ -1,0 +1,13 @@
+#!/bin/bash
+#Scripting file for running multiple training instances with (DR)MSD. If there are more CUDA cores on your machine the device IDs can be changed.
+#General usage: CUDA_VISIBLE_DEVICES=<CUDA DEVICE ID> timeout <days>d python X-rayDRMSDManyMaterialsFalse_train_segm.py <Dataset> <GroundTruth> <Datareduction> (leave Datareduction 0 for no reduction)
+CUDA_VISIBLE_DEVICES=0 timeout 20s python X-rayDRMSDManyMaterialsFalse_train_segm.py Data GT 0
+CUDA_VISIBLE_DEVICES=0 timeout 20s python X-rayDRMSDManyMaterialsFalse_train_segm.py Data GT [2]
+CUDA_VISIBLE_DEVICES=0 timeout 20s python X-rayDRMSDManyMaterialsFalse_train_segm.py FULLTrainingSet_Sample2_PCAData_2compData GT 0
+CUDA_VISIBLE_DEVICES=0 timeout 20s python X-rayDRMSDManyMaterialsFalse_train_segm.py FULLTrainingSet_Sample5_NMFData_2compData GT 0
+CUDA_VISIBLE_DEVICES=0 timeout 20s python X-rayDRMSDManyMaterialsFalse_train_segm.py FULLTrainingSet_Sample6_LDAData_1compDataGT GT 0
+CUDA_VISIBLE_DEVICES=0 timeout 20s python X-rayDRMSDManyMaterialsFalse_train_segm.py DataNoise GT 0
+CUDA_VISIBLE_DEVICES=0 timeout 20s python X-rayDRMSDManyMaterialsFalse_train_segm.py DataNoise GT [2]
+CUDA_VISIBLE_DEVICES=0 timeout 20s python X-rayDRMSDManyMaterialsFalse_train_segm.py FULLTrainingSet_Sample2_PCAData_2compDataNoise GT 0
+CUDA_VISIBLE_DEVICES=0 timeout 20s python X-rayDRMSDManyMaterialsFalse_train_segm.py FULLTrainingSet_Sample5_NMFData_2compDataNoise GT 0
+CUDA_VISIBLE_DEVICES=0 timeout 20s python X-rayDRMSDManyMaterialsFalse_train_segm.py FULLTrainingSet_Sample6_LDAData_1compDataNoiseGT GT 0
