@@ -71,6 +71,7 @@ class Spectra(object):
         source_spectrum = scipy.interpolate.interp1d(energies, photon_dens)
         self.SourceSpectrum = source_spectrum
 
+    #Collect all relevant attenation spectra
     def collectAttenuationSpectra(self, Rootdatapath):
         print("Loading attenuation spectra...")
         
