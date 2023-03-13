@@ -1,7 +1,7 @@
 #UNet and DRUNet network training script using generated hyperspectral X-ray data
 
-# This script carries out the UNet and DRUNet network training on hyperspectral X-ray data (and on data compressed by PCA, NMF and LDA methods) with many different materials
-# The results are the networks and log files generated from the (DR)UNet code
+# This script carries out the UNet and DRUNet network training on hyperspectral X-ray data (and on data compressed by PCA, NMF and LDA methods) with many different materials and different random seeds
+# The results are the networks and log files generated from the (DR)UNet code with different random seeds
 # The code assumes that the training data to be available, otherwise run the script in scripts/X-ray/generation/ folder first
 # The number of training:validation:test files are hardcoded as 70:20:10 (but can relatively easily be changed)
 
@@ -41,6 +41,10 @@ if(len(sys.argv) > 4):
     seed = int(sys.argv[4])
 else:
     seed = 124
+
+#Get CUDA device
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+print(device)
 
 #Settings
 DataPath = '../../../../../../data/X-rayDatasets/ManyMaterialsFalse/'

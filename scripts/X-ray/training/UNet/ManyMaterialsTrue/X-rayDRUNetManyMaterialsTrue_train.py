@@ -38,6 +38,10 @@ if(len(sys.argv) > 3):
 else:
     DataReductionArg = '0'
 
+#Get CUDA device
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+print(device)
+
 #Settings
 DataPath = '../../../../../data/X-rayDatasets/ManyMaterialsFalse/'
 DataReduction = False
