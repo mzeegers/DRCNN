@@ -1,7 +1,7 @@
 #MSD and DRMSD network training script using generated hyperspectral remote sensing based data
 
-# This script carries out the MSD and DRMSD network training on hyperspectral remote sensing based data (and on data compressed by PCA, NMF and LDA methods) without overlapping objects
-# The results are the networks and log files generated from the (DR)MSD code
+# This script carries out the MSD and DRMSD network training on hyperspectral remote sensing based data (and on data compressed by PCA, NMF and LDA methods) with overlapping objects and different random seeds
+# The results are the networks and log files generated from the (DR)MSD code with different random seeds
 # The code assumes that the training data to be available, otherwise run the script in scripts/RemoteSensing/generation/ folder first
 # The number of training:validation:test files are hardcoded as 70:20:10 (but can relatively easily be changed)
 
