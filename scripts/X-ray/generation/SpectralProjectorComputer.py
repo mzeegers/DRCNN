@@ -145,7 +145,7 @@ class Spectra(object):
         return content2
 
 
-class Spectral(object):
+class ProjectionGenerator(object):
     def __init__(self):
         #Material projections
         self.PathToProjs = '../../../data/X-rayDatasets/X-rayMatProjs/'                                             #Path to folder with material projections

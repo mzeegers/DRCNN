@@ -43,7 +43,7 @@ def SpectralDataGenerator(ManyMaterials):
     projsPath = '../../../data/X-rayDatasets/X-rayMatProjs/'
 
     #Make spectral projector object
-    PG = Spectral()
+    PG = ProjectionGenerator()
 
     #Energy settings
     PG.EnergyBounds = None  #Set to None for equidistant bounds
