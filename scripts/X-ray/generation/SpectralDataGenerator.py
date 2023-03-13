@@ -1,7 +1,7 @@
 #Creation of spectral projections from material projections
 
 #This scripts converts material projections into (sufficiently) realistic spectral projections
-#The results are the hyperspectral X-ray projections for the training and test sets in /data/X-rayDatasets/ManyMaterialsFalse and /data/X-rayDatasets/ManyMaterialsFalse true folders
+#The results are the hyperspectral X-ray projections for the training and test sets in /data/X-rayDatasets/ManyMaterialsFalse and /data/X-rayDatasets/ManyMaterialsFalse folders
 #In the ManyMaterialsTrue setting there are 60 different materials (among which 1 has to be recovered by identifying 2 cylinders)
 #In the ManyMaterialsFalse setting there are 2 different materials (among which 1 has to be recovered by identifying 2 cylinders, while the others are 1 other material)
 
