@@ -1,8 +1,8 @@
 #LDA compression for hyperspectral remote sensing images
 
 #This script applies LDA compression to the (training set of the) hyperspectral remote sensing based images
-#The code assumes that the EnvironmentsGenerator(PartiallyOverlapping).py, SpectralDataGenerator(PartiallyOverlapping).py and 
-# ApplyNoise(PartiallyOverlapping).py have been carried out first to produce the hyperspectral remote sensing datasets with ground truths,
+#The code assumes that the EnvironmentsGenerator(PartiallyOverlapping).py, SpectralRemoteSensingDataGenerator.py and 
+# ApplyNoise.py have been carried out first to produce the hyperspectral remote sensing datasets with ground truths,
 # and that those (four) datasets are available in the folders data/RemoteSensingDatasets/PartiallyOverlapping(True/False)/(Data/DataSourceNoise)/
 # as well as ground truth for both cases in the data/X-rayDatasets/PartiallyOverlapping(True/False)/GT10Labels/ folders
 
