@@ -1,4 +1,4 @@
-# <a href="https://www.mdpi.com/2313-433X/6/12/132" style="color: black;">DRNN</a>: Hyperspectral data reduction in supervised deep learning
+# <a href="https://www.mdpi.com/2313-433X/6/12/132" style="color: black;">DRCNN</a>: Hyperspectral data reduction in supervised deep learning
 
    <p align="center">
    <img src="./images/GraphicalAbstractv3Crop.svg">
@@ -96,6 +96,17 @@ To reproduce the various results in the [paper](https://www.mdpi.com/2313-433X/6
 The resulting plots (see examples below) will be located /results folder.
 
 ## Example results
+
+   <p align="center">
+   <img src="./images/SpectralProjectionNoisyBin60.png" style="width: 30%">
+   <img src="./images/X-rayDRUNetReductionChannelsResults.eps" style="width: 30%">
+   <img src="./images/X-rayDRMSDWeights.eps" style="width: 30%">
+   </p>
+   <p align="center">
+   <img src="./images/RemoteSensingData10OverlappingBin50.png" style="width: 30%">
+   <img src="./images/RemoteSensingDRUNetReductionChannelsCleanResults.eps" style="width: 30%">
+   <img src="./images/RemoteSensingDRMSDReductionChannelsNoisyOverlappingResults.eps" style="width: 30%">
+   </p>
 
 ## References
 
