@@ -1,0 +1,32 @@
+Msdnet version 1.0.0 needs the following fix in store.py (when installed in a conda environment, this file can be found in miniconda3/envs/<NAMEOFENVIRONMENT>/lib/python3.7/site-packages/msdnet):
+
+The function is:
+
+def __store_grp_in_dict(grp, dct):
+    for key, val in grp.attrs.items():
+        dct[key] = val.item()
+    
+    for key, val in grp.items():
+        if isinstance(val, h5py.Group):
+            newdct = {}
+            __store_grp_in_dict(val, newdct)
+            dct[key] = newdct
+        elif isinstance(val, h5py.Dataset):
+            dct[key] = val[:]
+            
+but should become:
+
+def __store_grp_in_dict(grp, dct):
+    for key, val in grp.attrs.items():
+        try:
+            dct[key] = val.item()
+        except ValueError: # Fix for old network files with python lists in attributes
+            dct[key] = val
+    
+    for key, val in grp.items():
+        if isinstance(val, h5py.Group):
+            newdct = {}
+            __store_grp_in_dict(val, newdct)
+            dct[key] = newdct
+        elif isinstance(val, h5py.Dataset):
+            dct[key] = val[:]

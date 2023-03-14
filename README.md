@@ -34,7 +34,7 @@ For running the remote sensing experiments, it is required to download the USGS 
 
 The scripts/X-ray/generation/ folder contains an operations.c file to speed up computations. This can be used by compiling by running 'gcc -shared -fopenmp -fPIC operations.c -o operations.so -lm'
 
-The msdnet code needs a small modification in the loggers code. Instructions for this can be found in msdnetInstructions.txt
+The msdnet code needs a small modification in the logging code. Instructions for this can be found in msdnetInstructions.txt.
 
 ## Scripts
 
