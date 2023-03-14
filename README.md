@@ -74,7 +74,7 @@ The package contains code to generate X-ray and remote sensing based images, as 
     │   └── plotting
     │       ├────────────── PlotRemoteSensingDRMSDReductionChannelsResults.py
     │       └────────────── PlotRemoteSensingDRUNetReductionChannelsResults.py
-    ├── RemoteSensing
+    ├── X-ray
     │   ├── generation
     │   │   ├────────────── MaterialProjectionsGenerator.py
     │   │   ├────────────── SpectralDataGenerator.py
