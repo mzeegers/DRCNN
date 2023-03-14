@@ -99,13 +99,13 @@ The resulting plots (see examples below) will be located /results folder.
 
    <p align="center">
    <img src="./images/SpectralProjectionNoisyBin60.png" style="width: 30%">
-   <img src="./images/X-rayDRUNetReductionChannelsResults.eps" style="width: 30%">
-   <img src="./images/X-rayDRMSDWeights.eps" style="width: 30%">
+   <img src="./images/X-rayDRUNetReductionChannelsResults.png" style="width: 30%">
+   <img src="./images/X-rayDRMSDWeights.png" style="width: 30%">
    </p>
    <p align="center">
    <img src="./images/RemoteSensingData10OverlappingBin50.png" style="width: 30%">
-   <img src="./images/RemoteSensingDRUNetReductionChannelsCleanResults.eps" style="width: 30%">
-   <img src="./images/RemoteSensingDRMSDReductionChannelsNoisyOverlappingResults.eps" style="width: 30%">
+   <img src="./images/RemoteSensingDRUNetReductionChannelsCleanResults.png" style="width: 30%">
+   <img src="./images/RemoteSensingDRMSDReductionChannelsNoisyOverlappingResults.png" style="width: 30%">
    </p>
 
 ## References
