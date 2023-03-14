@@ -97,7 +97,7 @@ The resulting plots (see examples below) will be located /results folder.
 
 ## Example results
 
-Below are data samples and segmentation performances of trained networks for various data reduction methods on the X-ray and remote sensing based datasets:
+Below are data samples and segmentation performances of trained networks for various data reduction methods on the X-ray (upper row) and remote sensing based (lower row) datasets:
 
    <p align="center">
    <img src="./images/SpectralProjectionNoisyBin60.png" style="width: 25%">
