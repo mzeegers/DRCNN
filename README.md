@@ -12,6 +12,30 @@ This package provides scripts for applying DRCNN with simulated hyperspectral X-
 
 ## Requirements
 
+Running the scripts requires a number of major and minor packages:
+
+**Major**:
+1. MSDNet (version 1.0.0):
+https://github.com/dmpelt/msdnet
+2. PyTorch:
+https://pytorch.org/
+3. ASTRA Toolbox (for X-ray experiments):
+https://github.com/astra-toolbox/astra-toolbox
+
+Minor (but essential):
+csv, matplotlib, numpy, scipy, sklearn, tifffile
+
+*Optional*:
+cudatoolkit (recommended), physdata.xray, pyqtgraph (useful for plotting and examining intermediate results)
+
+The code has been tested with Python version 3.6.10 on Fedora 36, with Intel(R) Core(TM) i7-7700K CPU, GeForce GTX 1070 GPU, CUDA version 11.8 and CUDA toolkit 10.1.243.
+
+For running the remote sensing experiments, it is required to download the USGS library (usgs_splib07.zip) and store it in the data/RemoteSensingDatasets/RemoteSensingSpectra/ folder
+
+The scripts/X-ray/generation/ folder contains an operations.c file to speed up computations. This can be used by compiling by running 'gcc -shared -fopenmp -fPIC operations.c -o operations.so -lm'
+
+The msdnet code needs a small modification in the loggers code. Instructions for this can be found in msdnetInstructions.txt
+
 ## Scripts
 
 The package contains code to generate X-ray and remote sensing based images, as well as to apply PCA, NMF and LDA reductions on the generated data for comparison with the DRCNN method. Furthermore, (DR)MSD and (DR)U-Net scripts are provided to train on each configuration (the X-ray segmetentation problem has a few- and many-material setting, while the remote sensing problem has a non-overlapping and partially overlapping setting). For the resulting trained networks, testing and plotting scripts are provided to replicate the results in the [paper](https://www.mdpi.com/2313-433X/6/12/132). The scripts folder is organized in the following manner:
