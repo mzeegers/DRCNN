@@ -167,8 +167,8 @@ plt.plot(x,y)
 plt.xlabel('Spectral bin')
 plt.ylabel('Output weight')
 plt.title('Output weight values per spectral bin for DRUNet')
-plt.savefig("../../../results/X-ray/plots/RemoteSensingDRUNetWeights.png", dpi=500)
-plt.savefig("../../../results/X-ray/plots/RemoteSensingDRUNetWeights.eps", format='eps', dpi=500)
+plt.savefig("../../../results/X-ray/plots/X-rayDRUNetWeights.png", dpi=500)
+plt.savefig("../../../results/X-ray/plots/X-raySensingDRUNetWeights.eps", format='eps', dpi=500)
 plt.show()
 
 #Get the reduced image and store it
