@@ -1,7 +1,7 @@
 # <a href="https://www.mdpi.com/2313-433X/6/12/132" style="color: black;">DRNN</a>: Hyperspectral data reduction in supervised deep learning
 
    <p align="center">
-   <img src="./images/GraphicalAbstractv3.svg">
+   <img src="./images/GraphicalAbstractv3Crop.svg">
     </p>
     
 ## Introduction
