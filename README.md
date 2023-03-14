@@ -98,14 +98,14 @@ The resulting plots (see examples below) will be located /results folder.
 ## Example results
 
    <p align="center">
-   <img src="./images/SpectralProjectionNoisyBin60.png" style="width: 20%">
-   <img src="./images/X-rayDRUNetReductionChannelsResults.png" style="width: 40%">
-   <img src="./images/X-rayDRMSDWeights.png" style="width: 40%">
+   <img src="./images/SpectralProjectionNoisyBin60.png" style="width: 25%">
+   <img src="./images/X-rayDRUNetReductionChannelsResults.png" style="width: 35%">
+   <img src="./images/X-rayDRMSDWeights.png" style="width: 35%">
    </p>
    <p align="center">
-   <img src="./images/RemoteSensingData10OverlappingBin50.png" style="width: 40%">
-   <img src="./images/RemoteSensingDRUNetReductionChannelsCleanResults.png" style="width: 40%">
-   <img src="./images/RemoteSensingDRMSDReductionChannelsNoisyOverlappingResults.png" style="width: 40%">
+   <img src="./images/RemoteSensingData10OverlappingBin50.png" style="width: 25%">
+   <img src="./images/RemoteSensingDRUNetReductionChannelsCleanResults.png" style="width: 35%">
+   <img src="./images/RemoteSensingDRMSDReductionChannelsNoisyOverlappingResults.png" style="width: 35%">
    </p>
 
 ## References
