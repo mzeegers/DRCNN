@@ -156,6 +156,6 @@ The algorithms and routines implemented in this Python package are described in 
 Code written by:
 - Mathé Zeegers (m [dot] t [dot] zeegers [at] cwi [dot] nl).
 
-DRMSD code written by Daniël Pelt. 
+DRMSD code written by [Daniël Pelt](https://github.com/dmpelt). 
 
 The MSD and UNet training scripts contain elements of MSD code (https://github.com/dmpelt/msdnet) by Daniël Pelt and PyTorch UNet code (https://github.com/usuyama/pytorch-unet) by Naoto Usuyama respectively.
