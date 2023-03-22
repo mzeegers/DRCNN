@@ -38,7 +38,7 @@ The msdnet code needs a small modification in the logging code. Instructions for
 
 ## Scripts
 
-The package contains code to generate X-ray and remote sensing based images, as well as to apply PCA, NMF and LDA reductions on the generated data for comparison with the DRCNN method. Furthermore, (DR)MSD and (DR)U-Net scripts are provided to train on each configuration (the X-ray segmetentation problem has a few- and many-material setting, while the remote sensing problem has a non-overlapping and partially overlapping setting). For the resulting trained networks, testing and plotting scripts are provided to replicate the results in the [paper](https://www.mdpi.com/2313-433X/6/12/132). The scripts folder is organized in the following manner:
+The package contains code to generate X-ray and remote sensing based images, as well as to apply PCA, NMF and LDA reductions on the generated data for comparison with the DRCNN method. Furthermore, (DR)MSD and (DR)U-Net scripts are provided to train on each configuration (the X-ray segmentation problem has a few- and many-material setting, while the remote sensing problem has a non-overlapping and partially overlapping setting). For the resulting trained networks, testing and plotting scripts are provided to replicate the results in the [paper](https://www.mdpi.com/2313-433X/6/12/132). The scripts folder is organized in the following manner:
 
 ```
 ├── scripts
